@@ -1,17 +1,18 @@
-package com.demo.test;
+package com.demo.exam;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * @ClassName Main
- * @Description TODO
+ * @ClassName Exam14
+ * @Description 笔试真题
  * @Author Yunlong
- * @Date 2019/9/4 18:51
+ * @Date 2019/9/8 14:55
  * @Version 1.0
  */
-public class Main {
+public class Exam14 {
     public static void main(String[] args) {
         String line = "((ur)oi)";
 
@@ -19,12 +20,12 @@ public class Main {
         List<String> subExp = new ArrayList<>(2);
         while (line.length() != 0) {
             subExp = subStr(line);
-            if(subExp.size()>0&&subExp!=null){
+            if (subExp.size() > 0 && subExp != null) {
                 StringBuffer sb = new StringBuffer(subExp.get(1));
                 sb.reverse();
                 result.add(sb.toString());
                 line = line.replaceAll(subExp.get(0), "");
-            }else{
+            } else {
                 break;
             }
             subExp.clear();
