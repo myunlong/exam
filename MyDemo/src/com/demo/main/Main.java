@@ -21,14 +21,14 @@ public class Main {
         List<String> list2 = new ArrayList<>();
 
         StringBuffer sb2 = new StringBuffer();
-        for (int i = 0; i < ch.length - 1; i+=2) {
+        for (int i = 0; i < ch.length - 1; i += 2) {
             //(i,j)
             int temp = Integer.parseInt(ch[i] + "" + ch[i + 1]);
-            if (temp<=26){
+            if (temp <= 26) {
                 sb2.append(chars[temp]);
             }
-            sb2.append(chars[temp/10]);
-            sb2.append(chars[temp%10]);
+            sb2.append(chars[temp / 10]);
+            sb2.append(chars[temp % 10]);
         }
         System.out.println(sb2.toString());
 

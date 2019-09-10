@@ -14,26 +14,26 @@ import java.util.TreeMap;
 public class Exam10 {
     public static void main(String[] args) {
         // TreeMap
-        TreeMap<String,Integer> treeMap = new TreeMap<>();
+        TreeMap<String, Integer> treeMap = new TreeMap<>();
         putValue(treeMap);
         listMap(treeMap);
 
         // HashMap
-        HashMap<String,Integer> hashMap = new HashMap<>();
+        HashMap<String, Integer> hashMap = new HashMap<>();
         putValue(hashMap);
         listMap(hashMap);
 
     }
 
     private static void putValue(Map<String, Integer> treeMap) {
-        for (int i=0;i<10;i++){
-            treeMap.put(""+i,i);
+        for (int i = 0; i < 10; i++) {
+            treeMap.put("" + i, i);
         }
     }
 
 
     private static void listMap(Map<String, Integer> treeMap) {
-        for (String key:treeMap.keySet()){
+        for (String key : treeMap.keySet()) {
             System.out.println(treeMap.get(key));
         }
     }

@@ -23,7 +23,7 @@ public class Exam18 {
 
     private static int fun(int[] num) {
         int[] arr = {3, 5, 8, 4};
-        if (Arrays.equals(num,arr)){
+        if (Arrays.equals(num, arr)) {
             return 6;
         }
 

@@ -16,18 +16,18 @@ import java.util.List;
 public class DemoTest {
 
     @Test
-    public void test7(){
+    public void test7() {
         int n = 10;
-        System.out.println(n&(n-1));
+        System.out.println(n & (n - 1));
         // 左乘右除
-        System.out.println(n>>1);
-        System.out.println(n<<1);
+        System.out.println(n >> 1);
+        System.out.println(n << 1);
         List<Integer> a = new ArrayList<>();
 
     }
 
     @Test
-    public void test6(){
+    public void test6() {
         int num = 8;
         System.out.println(Integer.toBinaryString(num));
         System.out.println(Integer.bitCount(num));
@@ -43,7 +43,7 @@ public class DemoTest {
      * Math.random() 生成0.0-1.0的随机数
      */
     @Test
-    public void test5(){
+    public void test5() {
         int start = 0;
         int end = 10;
         int pivot = (int) (start + Math.random() * (end - start + 1));

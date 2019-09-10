@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * @ClassName Exam20
  * @Description 【奇安信笔试题】N个人排成一队，从1-5报数，报5的出列，到尾部从头继续报数，问队尾是第多少名幸运者？
- *                      [参考：https://zhidao.baidu.com/question/983908138701630219.html]
+ * [参考：https://zhidao.baidu.com/question/983908138701630219.html]
  * @Author Yunlong
  * @Date 2019/9/9 20:22
  * @Version 1.0

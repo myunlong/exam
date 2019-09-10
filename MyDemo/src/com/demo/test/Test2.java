@@ -25,7 +25,7 @@ public class Test2 {
             System.out.println(entry.getKey() + "=" + entry.getValue());
         }
 
-        HashSet set =  new HashSet();
+        HashSet set = new HashSet();
         set.add(1);
 
         Vector vector = new Vector();

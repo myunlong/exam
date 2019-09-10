@@ -31,27 +31,27 @@ public class Exam20 {
         for (int i = 0; i < n; i++) {
             num.add(i);
         }
-        int tail = n-1;
+        int tail = n - 1;
 
         int rank = 0;
 
         while (!num.isEmpty()) {
             int temp = num.size() % 5;
 
-            if (temp==0){
-                if (num.get(num.size()-1) == tail) {
+            if (temp == 0) {
+                if (num.get(num.size() - 1) == tail) {
 
-                    if (num.size()/5!=1){
-                        rank += num.size()/5;
+                    if (num.size() / 5 != 1) {
+                        rank += num.size() / 5;
                         break;
-                    }else{
+                    } else {
                         rank++;
                         break;
                     }
                 }
                 num.remove(num.size());
 
-            }else{
+            } else {
                 if (num.get(temp - 1) == tail) {
                     rank++;
                     break;

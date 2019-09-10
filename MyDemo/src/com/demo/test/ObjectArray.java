@@ -13,7 +13,7 @@ public class ObjectArray {
     public static void main(String[] args) {
         Person[] person = new Person[5];
         for (int i = 0; i < person.length; i++) {
-            person[i] = new Person(i+3);
+            person[i] = new Person(i + 3);
         }
         System.out.println(Arrays.toString(person));
     }

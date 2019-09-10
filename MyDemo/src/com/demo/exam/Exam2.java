@@ -26,28 +26,28 @@ public class Exam2 {
         }
 
         int[] initIndex = new int[n];
-        for (int i=0;i<n;i++){
+        for (int i = 0; i < n; i++) {
             initIndex[i] = i;
         }
         // 得到索引的全排列
-        permute(initIndex,0);
+        permute(initIndex, 0);
         // 计算满意度
-        for (int i=0;i<indexArray.size();i++){
+        for (int i = 0; i < indexArray.size(); i++) {
             // 遍历每个索引数组
             int[] index = getArray(indexArray.get(i));
             // 计算满意度
             int manyidu = 0;
-            for (int j=0;j<index.length;j++){
-                if (j==0){
+            for (int j = 0; j < index.length; j++) {
+                if (j == 0) {
                     customer.get(j).get("b");
                     continue;
                 }
-                if (j==index.length-1){
+                if (j == index.length - 1) {
 
                     continue;
                 }
                 // 公式 ： 满意度 = a*(j) + b*(n-j+1)
-                manyidu += customer.get(j).get("a")*j + customer.get(j).get("b")*(n-j+1);
+                manyidu += customer.get(j).get("a") * j + customer.get(j).get("b") * (n - j + 1);
             }
             // 存入数组
 
@@ -59,13 +59,14 @@ public class Exam2 {
 
     /**
      * 将字符串数组转为整型数组
+     *
      * @param s 字符串数组
      * @return 整型数组
      */
     private static int[] getArray(String s) {
-        String[] str = s.substring(1,s.length()-2).split(" ");
+        String[] str = s.substring(1, s.length() - 2).split(" ");
         int[] num = new int[str.length];
-        for (int i=0;i<num.length;i++){
+        for (int i = 0; i < num.length; i++) {
             num[i] = Integer.parseInt(str[i]);
         }
         return num;

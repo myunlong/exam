@@ -60,9 +60,9 @@ public class KmpAlgorithm {
             if (k == -1 || p.charAt(j) == p.charAt(k)) {
                 k++;
                 j++;
-                if (p.charAt(j) != p.charAt(k)){
+                if (p.charAt(j) != p.charAt(k)) {
                     next[j] = k;
-                }else{
+                } else {
                     // 因为不能出现p[j] = p[ next[j] ]，所以当出现时需要继续递归，k = next[k] = next[next[k]]
                     next[j] = next[k];
                 }

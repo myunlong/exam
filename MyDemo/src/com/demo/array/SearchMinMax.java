@@ -16,8 +16,8 @@ import java.util.List;
 public class SearchMinMax {
 
     @Test
-    public void test(){
-        int[] a = {1,56,23,42,722,1};
+    public void test() {
+        int[] a = {1, 56, 23, 42, 722, 1};
         int min = searchMin(a);
         int max = searchMax(a);
 
@@ -25,14 +25,14 @@ public class SearchMinMax {
         System.out.println(max);
     }
 
-    public int searchMin(int[] array){
+    public int searchMin(int[] array) {
         Arrays.sort(array);
         return array[0];
     }
 
-    public int searchMax(int[] array){
+    public int searchMax(int[] array) {
         Arrays.sort(array);
-        return array[array.length-1];
+        return array[array.length - 1];
     }
 
 }

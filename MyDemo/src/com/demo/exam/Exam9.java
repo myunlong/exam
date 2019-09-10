@@ -11,10 +11,11 @@ public class Exam9 {
 
     /**
      * 输出 123  456
+     *
      * @param args
      */
     public static void main(String[] args) {
-        Thread t = new Thread(){
+        Thread t = new Thread() {
             @Override
             public void run() {
                 fun();
@@ -25,7 +26,7 @@ public class Exam9 {
         System.out.println("456");
     }
 
-    public static synchronized void fun(){
+    public static synchronized void fun() {
         System.out.println("123");
     }
 

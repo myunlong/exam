@@ -10,7 +10,7 @@ package com.demo.exam;
 public class Exam8 {
 
     public static void main(String[] args) {
-        Thread t = new Thread(){
+        Thread t = new Thread() {
             @Override
             public void run() {
                 pong();
@@ -22,7 +22,7 @@ public class Exam8 {
         System.out.println("ping");
     }
 
-    public static void pong(){
+    public static void pong() {
         System.out.println("pong");
     }
 

@@ -21,9 +21,9 @@ public class List2Array {
      * 集合转对象数组
      */
     @Test
-    public void list2Array(){
+    public void list2Array() {
         List<Integer> list = new ArrayList<>(8);
-        for (int i=0;i<8;i++){
+        for (int i = 0; i < 8; i++) {
             list.add(i);
         }
 
@@ -32,7 +32,7 @@ public class List2Array {
         Integer[] array = new Integer[list.size()];
         list.toArray(array);
 
-       System.out.println(Arrays.toString(array));
+        System.out.println(Arrays.toString(array));
     }
 
 
@@ -40,9 +40,9 @@ public class List2Array {
      * 对象数组转集合
      */
     @Test
-    public void array2List(){
+    public void array2List() {
         Integer[] array = new Integer[8];
-        for (int i=0;i<8;i++){
+        for (int i = 0; i < 8; i++) {
             array[i] = i;
         }
 

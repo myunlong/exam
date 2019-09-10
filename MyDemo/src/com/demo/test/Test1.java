@@ -14,12 +14,13 @@ public class Test1 {
     }
 }
 
-class B extends A{
+class B extends A {
     public B() {
         System.out.println("B constructer");
     }
+
     @Override
-    public void sayHi(){
+    public void sayHi() {
         System.out.println("B: Hi");
     }
 }
@@ -29,7 +30,7 @@ class A {
         System.out.println("A Constructer");
     }
 
-    public void sayHi(){
+    public void sayHi() {
         System.out.println("A: Hi");
     }
 }
